@@ -122,6 +122,9 @@ input.error, select.error {
   padding-top: 15px;
   padding-bottom: 15px; }
 
+.footer {
+  margin-top: 35px; }
+
 .row {
   margin: 0; }
 

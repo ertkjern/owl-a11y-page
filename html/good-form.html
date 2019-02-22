@@ -17,24 +17,26 @@
 
 <!-- heading -->
 <div class="container header">
-    <div class="logo col">
-        <!-- Missing alt tag -->
-    <a href="javascript:void(0)">
-            <img alt="logo" height="100px" src="./../imgs/456789o2kj32h3owl_logo.svg">
-        </a>
-    </div>
+    <header>
+        <div class="logo col">
+            <!-- Missing alt tag -->
+            <a href="javascript:void(0)">
+                <img alt="logo" height="100px" src="./../imgs/456789o2kj32h3owl_logo.svg">
+            </a>
+        </div>
 
-    <div class="navigation col">
-        <!-- Not good DOM Ordering -->
-        <a href="javascript:void(0)">Home</a>
-        <a href="javascript:void(0)">Contact</a>
-        <a href="javascript:void(0)">About</a>
-    </div>
+        <div role="navigation" class="navigation col">
+            <!-- Not good DOM Ordering -->
+            <a href="javascript:void(0)">Home</a>
+            <a href="javascript:void(0)">Contact</a>
+            <a href="javascript:void(0)">About</a>
+        </div>
+    </header>
 </div>
 
 <div class="container-fluid divider"></div>
 
-<div class="container main-content">
+<main class="container main-content">
 
 
     <h1>The free owl site</h1>
@@ -43,32 +45,33 @@
     <div class="row content">
         <!-- owl form, with no form tag or submit -->
         <div class="col-md-6">
-            <div class="row">
-                <h2 class="sub-header">Add owl</h2>
-            </div>
-
-            <div class="row">
-                <!-- input with no labels -->
-                <div class="form-input">
-                    <label for="owlDesc">Owl description</label>
-                    <input id="owlDesc" type="text" placeholder="Description">
+            <form>
+                <div class="row">
+                    <h2 class="sub-header">Add owl</h2>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="form-input">
+                <div class="row">
                     <!-- input with no labels -->
-                    <label for="owlType">Owl type</label>
-                    <select id="owlType">
-                        <option selected disabled value="-1">Select</option>
-                    </select>
+                    <div class="form-input">
+                        <label for="owlDesc">Owl description</label>
+                        <input id="owlDesc" type="text" placeholder="Description">
+                    </div>
                 </div>
-            </div>
 
-            <div class="row padding-standard">
-                <button type="submit" id="submitOwl" class="standard-button">Add owl</button>
-            </div>
+                <div class="row">
+                    <div class="form-input">
+                        <!-- input with no labels -->
+                        <label for="owlType">Owl type</label>
+                        <select id="owlType">
+                            <option selected disabled value="-1">Select</option>
+                        </select>
+                    </div>
+                </div>
 
+                <div class="row padding-standard">
+                    <button type="submit" id="submitOwl" class="standard-button">Add owl</button>
+                </div>
+            </form>
         </div>
 
         <!-- favourites -->
@@ -85,20 +88,24 @@
     </div>
 
     <div class="row site-info">
-        <div class="col-6">
+        <article class="col-6">
             <h2>Why this site?</h2>
              <p>The free owl site is a great place to add your favourite owls to a list. As owl tends to fly, the list
                wil be reset every time you refres the site....</p>
-        </div>
-        <div class="col-6">
+        </article>
+        <article class="col-6">
             <h2>But why?</h2>
              <p>The free owl site is a great place to add your favourite owls to a list. As owl tends to fly, the list
                wil be reset every time you refres the site....</p>
-        </div>
+        </article>
 
     </div>
-</div>
+</main>
 
+<footer class="footer container">
+    <hr/>
+    <p>Icon made by Freepik from www.flaticon.com</p>
+</footer>
 <!-- External Scripts -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
