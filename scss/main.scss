@@ -1,0 +1,143 @@
+// scss --watch scss/main.scss:output.css
+
+@import "forms";
+@import "variables";
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+.bad-example {
+
+  .header {
+    height: 130px;
+    border-bottom: 1px solid $brown;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .navigation {
+      margin-top: -35px;
+      a {
+        color: $font-brown;
+        padding: 5px;
+        float: right;
+      }
+    }
+  }
+
+  .main-content{
+    h1{
+      margin-left: -15px;
+    }
+    margin-top: 35px;
+
+    .content{
+      margin-top: 35px;
+
+      .sub-header{
+        margin-bottom: 35px;
+      }
+
+      .selected-owl-desc{
+        display: inline-block;
+      }
+      .selected-owl-desc{
+        margin-left: 5px;
+        display: inline-block;
+      }
+      .trash{
+        padding-top: 25px;
+        float: right;
+      }
+    }
+
+    .owl-list{
+      padding-bottom: 25px;
+      padding-top: 25px;
+      border-bottom: 1px solid $brown;
+    }
+
+
+    .site-info{
+      margin-top: 35px;
+    }
+  }
+}
+
+.good-example{
+  .header {
+    height: 130px;
+    border-bottom: 1px solid $brown;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    .navigation {
+      margin-top: -35px;
+      text-align: right;
+      a {
+        color: $font-brown;
+        padding: 5px;
+      }
+    }
+  }
+
+  .main-content{
+    h1{
+      margin-left: -15px;
+    }
+    margin-top: 35px;
+
+    .content{
+      margin-top: 35px;
+
+      .sub-header{
+        margin-bottom: 35px;
+      }
+
+      .selected-owl-desc{
+        display: inline-block;
+      }
+      .selected-owl-desc{
+        margin-left: 5px;
+        display: inline-block;
+      }
+      .trash{
+        padding-top: 25px;
+        float: right;
+      }
+    }
+
+    .owl-list{
+      padding-bottom: 25px;
+      padding-top: 25px;
+      border-bottom: 1px solid $brown;
+    }
+
+
+    .site-info{
+      margin-top: 35px;
+    }
+  }
+}
+
+.header-bad{
+  font-size: 32px;
+  padding-bottom: 15px;
+}
+
+.header-large-bad{
+  font-size: 32px;
+  padding-bottom: 15px;
+}
+
+input.error, select.error{
+  border: 1px solid red;
+}
+
+.padding-standard{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.row{
+  margin: 0;
+}
+

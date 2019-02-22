@@ -1,0 +1,43 @@
+@import "mixins";
+@import "variables";
+
+.form-input {
+  margin-bottom: 35px;
+
+  label {
+    display: block;
+    margin-bottom: 0;
+  }
+  input {
+    border: 1px solid $font-brown;
+    width: 250px;
+    padding: 5px;
+    height: 35px;
+  }
+
+  select {
+    @include no-button-styling();
+    border: 1px solid $font-brown;
+    border-radius: 0px;
+    width: 250px;
+    padding: 5px;
+    height: 35px;
+  }
+}
+
+.standard-button{
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  border: 2px solid $brown;
+  color: black;
+  @include standard-transition();
+  &:hover{
+    background-color: $brown;
+  }
+}
+
+.button-padding{
+  padding-top: 10px;
+}
+
